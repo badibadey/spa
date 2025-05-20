@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #E0F7F4;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.focus-visible:focus {
+  outline-offset: 4px;
+  outline: 2px solid #21C4B2;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #E0F7F4 0%, #FFFFFF 100%);
+}
